@@ -144,6 +144,7 @@ nav a:hover {
 
 .history h2 {
     grid-area: title;
+    text-align: center;
 }
 
 #history1 {
