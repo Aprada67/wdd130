@@ -225,3 +225,153 @@ footer p {
     width: 25px;
     height: auto;
 }
+
+.container1 {
+    display: grid;
+    grid-template-areas: 
+        "title title title"
+        "box1  box2  box3";
+    gap: 1rem;
+}
+
+span {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+.container1 .contact-methods {
+    grid-area: title;
+}
+
+.container2, .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#mail {
+    font-size: 1.15rem;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+#mail:hover {
+    color: var(--additional-accent-color);
+    font-weight: 500;
+}
+
+.contact-methods {
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.container1 figure {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container1 figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+
+iframe {
+    margin: 2rem 0 2rem 0;
+}
+
+label {
+    color: var(--accent-color);
+}
+
+label, button {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    
+}
+
+input, textarea {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+label,
+input,
+button,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+form {
+    width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    display: grid;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+    background-color: #eee;
+}
+textarea {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--additional-accent-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.porpuse {
+    margin-top: 1rem;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
