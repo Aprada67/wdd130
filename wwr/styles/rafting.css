@@ -13,10 +13,12 @@ body {
 }
 
 :root {
-    --primary-color: #FB8500;
-    --secondary-color: #219EBC;
-    --accent-color: #023047;
-    --additional-accent-color: #FFB703;
+    --primary-color: #252525;
+    --secondary-color: #fff;
+    --accent-color: #99D930;
+    --additional-accent-color: #FF30EE;
+    --gradient-color: #6CA50E;
+    --gradien-color-hover: #9B008E;
 
     --heading-font: "DM Sans", serif;
     --paragraph-font: "DM Sans", serif;
@@ -118,7 +120,7 @@ header {
 
 nav a {
     font-size: 1.25rem;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 nav a:hover {
@@ -201,7 +203,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--nav-background-color);
+    background-color: var(--accent-color);
+    color: var(--primary-color);
     padding: 1rem;
     text-align: center;
 }
@@ -234,6 +237,7 @@ footer p {
     gap: 1rem;
 }
 
+
 span {
     color: var(--accent-color);
     font-weight: 700;
@@ -252,17 +256,18 @@ span {
 
 #mail {
     font-size: 1.15rem;
-    background-color: var(--accent-color);
+    background-image: linear-gradient(to right, var(--accent-color), var(--gradient-color));
     padding: 1rem;
     border-radius: 8px;
     color: #fff;
     margin-top: 1rem;
     text-decoration: none;
+    font-weight: 900;
 }
 
 #mail:hover {
-    color: var(--additional-accent-color);
-    font-weight: 500;
+    color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--additional-accent-color), var(--gradien-color-hover));
 }
 
 .contact-methods {
@@ -305,7 +310,7 @@ iframe {
 }
 
 label {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
 label, button {
@@ -329,7 +334,7 @@ form {
     width: 100%;
     margin: 2rem auto;
     padding: 2rem;
-    border: 1px solid var(--accent-color);
+    border: 1px solid var(--secondary-color);
     border-radius: 8px;
     display: grid;
     grid-gap: 0.5rem;
@@ -341,19 +346,19 @@ textarea {
 }
 
 button {
-    background-color: var(--accent-color);
-    color: var(--additional-accent-color);
+    background-image: linear-gradient(to right, var(--accent-color), var(--gradient-color));
+    color: var(--secondary-color);
     padding: 1rem;
-    border-radius: 8px;
     margin-top: 1rem;
     border: none;
     font-weight: 700;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 button:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: var(--secondary-color);
+    background-image: linear-gradient(to right, var(--additional-accent-color), var(--gradien-color-hover));
 }
 
 button:active {
@@ -370,4 +375,57 @@ button:active {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 1rem;
+}
+
+/* Trips */
+
+.reservation {
+    text-align: center;
+    margin: 3rem auto 3rem auto;
+    width: 600px;
+}
+
+.booking {
+    width: 400px;
+    display: block;
+    margin: 0 auto 3rem auto;
+}
+
+hr {
+    background-color: #ccc;
+    margin-bottom: 4rem;
+}
+
+.trips h1 {
+    margin: 3rem auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.trips-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    gap: 6rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan h2 {
+    font-weight: 300;
+}
+
+.plan button {
+    margin: 2rem 0 4rem 0;
+    width: 80%;
+}
+
+.plan img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
