@@ -383,6 +383,7 @@ button:active {
     text-align: center;
     margin: 3rem auto 3rem auto;
     width: 600px;
+    font-weight: 300;
 }
 
 .booking {
