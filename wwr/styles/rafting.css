@@ -429,3 +429,13 @@ hr {
     height: 150px;
     object-fit: cover;
 }
+
+footer a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: var(--gradien-color-hover);
+    text-decoration: underline;
+}
