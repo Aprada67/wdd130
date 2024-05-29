@@ -440,3 +440,131 @@ footer a:hover {
     color: var(--gradien-color-hover);
     text-decoration: underline;
 }
+
+/* Home */
+
+.heading-message {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.heading-message img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.heading-message p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 2rem;
+    background-color: rgba(25, 25, 25, 0.8);
+    color: var(--secondary-color);
+    font-weight: 400;
+}
+
+.porpuse-offering {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 6rem;
+}
+
+.line {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.porpuse-offering h2 {
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.porpuse-offering div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.porpuse-offering img {
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.book {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.book h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.book button {
+    width: 250px;
+    margin: 2rem;
+}
+
+/* Form */
+
+.newsletter {
+    width: 60%;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.newsletter fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.newsletter legend {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--additional-accent-color);
+    font-weight: 700;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column {
+    grid-template-columns: 2fr 3fr;
+}
+
+.newsletter label {
+    text-align: right;
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+
+input {
+    font-family: var(--paragraph-font);
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1rem;
+}
+
+.newsletter input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.newsletter button {
+    margin-bottom: 2rem;
+}
