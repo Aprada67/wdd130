@@ -568,3 +568,9 @@ input {
 .newsletter button {
     margin-bottom: 2rem;
 }
+
+.underline {
+    margin: 5rem auto;
+    width: 100%;
+    display: block;
+}
