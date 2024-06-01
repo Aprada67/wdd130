@@ -6,52 +6,73 @@ body {
     padding: 20px;
 }
 
+header,
+body,
+footer {
+    margin: 0 auto;
+}
+
 :root {
-    --primary-color: #FB8500;
-    --secondary-color: #219EBC;
-    --accent-color: #023047;
-    --additional-accent-color: #FFB703;
+    --primary-color: #252525;
+    --secondary-color: #fff;
+    --accent-color: #99D930;
+    --additional-accent-color: #FF30EE;
+    --gradient-color: #6CA50E;
+    --gradien-color-hover: #9B008E;
 
     --heading-font: "DM Sans", serif;
     --paragraph-font: "DM Sans", serif;
-
-    --nav-background-color: #FB8500;
-    --nav-link-color: #219EBC;
-    --nav-hover-link-color: #023047;
-    --nav-hover-background-color: #FFB703;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
+    color: var(--acc);
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 3rem;
 }
 
 header {
     padding: 20px;
     background-color: var(--accent-color);
-}
-
-p {
-    padding: 25px;
+    margin-bottom: 3rem;
 }
 
 nav {
-    background-color: var(--nav-background-color);
+    background-color: var(--accent-color);
     font-size: 1.2rem;
     display: flex;
 }
 
 nav a {
     display: block;
-    color: var(--nav-link-color);
+    color: var(--secondary-color);
     text-decoration: none;
     padding: 1rem;
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+    color: var(--primary-color);
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color-color);
     background-color: var(--nav-hover-background-color);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    flex: 1;
+    margin: 0;
 }

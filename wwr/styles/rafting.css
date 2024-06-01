@@ -22,11 +22,6 @@ body {
 
     --heading-font: "DM Sans", serif;
     --paragraph-font: "DM Sans", serif;
-
-    --nav-background-color: #FB8500;
-    --nav-link-color: #219EBC;
-    --nav-hover-link-color: #023047;
-    --nav-hover-background-color: #FFB703;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +58,7 @@ footer img {
 }
 
 .hero h1,
-.hero article {
+.hero div {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -84,14 +79,14 @@ footer img {
     color: #fff;
 }
 
-.hero article {
+.hero div {
     width: 80%;
     top: 60%;
-    background-color: rgba(2, 48, 71, 0.7);
+    background-color: rgba(25, 25, 25, 0.7);
     padding: 10px;
 }
 
-.hero article img {
+.hero div img {
     width: 180px;
     float: right;
 }
